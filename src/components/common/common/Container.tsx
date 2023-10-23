@@ -1,11 +1,7 @@
 import React, {ComponentProps, memo} from 'react';
-import {
-  StyleSheet,
-  ScrollView as BaseScrollView,
-  ViewStyle,
-  StyleProp,
-} from 'react-native';
+import {StyleSheet, ViewStyle, StyleProp} from 'react-native';
 import {globalStyles} from '../../../styles/globalStyles';
+import {ScrollView as BaseScrollView} from 'react-native-gesture-handler';
 
 type Props = ComponentProps<typeof BaseScrollView> & {
   children: React.ReactNode;
@@ -16,7 +12,7 @@ export const Container = memo(
   ({children, contentContainerStyle, ...rest}: Props) => {
     return (
       <BaseScrollView
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={true}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={[
           styles.container,

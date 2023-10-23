@@ -1,4 +1,5 @@
 export default {
-  primaryBg: '#9bba52',
+  primaryBg: '#fff',
   secondaryBg: '#5386DA',
+  black: '#000000',
 };

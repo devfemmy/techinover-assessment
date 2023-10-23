@@ -4,7 +4,7 @@ import {wp, hp} from '../utils/index';
 export const globalStyles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000000',
   },
   container: {
     paddingHorizontal: wp(15),
@@ -29,6 +29,11 @@ export const globalStyles = StyleSheet.create({
   rowBetween: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  rowEvenly: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
   },
   rowBetweenNoCenter: {

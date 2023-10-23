@@ -32,7 +32,7 @@ export const Text = memo(
     lineHeight,
     onPress,
     textAlign,
-    color = '#000',
+    color = '#fff',
     fontWeight = '400',
     style,
     ...rest
